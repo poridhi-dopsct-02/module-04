@@ -12,6 +12,7 @@ sudo systemctl status nginx
 sudo nano /etc/nginx/sites-available/<configuration file name>
 
 # Paste this on that configuration file
+: '
 #########################################
 server {
     listen 80;
@@ -25,6 +26,7 @@ server {
     }
 }
 #########################################
+'
 
 # Enable this configuration file by creating a link
 sudo ln -s /etc/nginx/sites-available/<configuration file name> /etc/nginx/sites-enabled/
