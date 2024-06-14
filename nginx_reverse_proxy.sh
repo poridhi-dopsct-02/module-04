@@ -1,5 +1,7 @@
-# install Nginx
+# Update packages
 sudo apt update
+
+# Install Nginx
 sudo apt install nginx
 
 # Allow access to Nginx through firewall
